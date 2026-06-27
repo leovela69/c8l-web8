@@ -11,11 +11,5 @@
         { "key": "X-Content-Type-Options", "value": "nosniff" }
       ]
     }
-  ],
-  "rewrites": [
-    {
-      "source": "/api/:path*",
-      "destination": "https://c8l-bot-server.onrender.com/api/:path*"
-    }
   ]
 }
