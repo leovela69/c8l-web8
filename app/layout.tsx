@@ -1,23 +1,21 @@
 import type { Metadata } from 'next'
 import './globals.css'
-import { Providers } from './providers'
-import AuthGate from '@/components/auth/AuthGate'
 
 export const metadata: Metadata = {
-  title: 'C8L Agency | Corazones Locos Family',
-  description: 'Plataforma de entretenimiento, musica y comunidad. C8L TV, Estudio Musical IA, Casino, Streaming, Comunidad.',
-  keywords: ['C8L Agency', 'Corazones Locos', 'Bolero-House', 'Musica IA', 'Streaming', 'Gaming'],
+  title: 'C8L Studio — Disena como un profesional',
+  description: 'Editor de diseno visual estilo Canva. Crea graficos, presentaciones, posts para redes sociales y mas.',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="es">
-      <body className="min-h-screen bg-c8l-black text-white antialiased">
-        <Providers>
-          <AuthGate>
-            {children}
-          </AuthGate>
-        </Providers>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+      </head>
+      <body className="min-h-screen bg-[#0f0f0f] text-white antialiased overflow-hidden">
+        {children}
       </body>
     </html>
   )

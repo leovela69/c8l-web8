@@ -1,7 +1,7 @@
 {
-  "name": "c8l-web",
+  "name": "c8l-studio",
   "version": "1.0.0",
-  "description": "C8L Agency — Plataforma de creacion (Canva, Adobe, IA, herramientas)",
+  "description": "C8L Studio — Editor de diseno visual estilo Canva/Adobe",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -12,9 +12,7 @@
   "dependencies": {
     "next": "14.2.15",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "@supabase/supabase-js": "^2.45.0",
-    "framer-motion": "^11.5.0"
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "typescript": "^5.5.0",
@@ -28,4 +26,3 @@
     "eslint-config-next": "14.2.15"
   }
 }
-
